@@ -6,20 +6,20 @@
  
 ### There are currently no instructions, I will write them sometime in the future :)
 
-# PCB (28 GPIO pins)
+### PCB (28 GPIO pins)
 <p align="center">
  <img src="./images/pcb.jpg" width="60%"/>
  
-# PCB 3D File Raytraced Render in KiCAD
+#### PCB 3D File Raytraced Render in KiCAD
 <p align="center">
  <img src="./images/raytraced.jpg" width="60%"/>
 
-# Real Images (working prototype from JLCPCB, HASL(PBF) 2 Layer, Black Solder Mask)
+#### Real Images (working prototype from JLCPCB, HASL(PBF) 2 Layer, Black Solder Mask)
 <p align="center">
  <img src="./images/top.jpg" width="60%"/>
  <img src="./images/side.jpg" width="60%"/>
 
-# Unsightly Image with more detail on the PCB
+### Unsightly Image with more detail on the PCB
 <p align="center">
  <img src="./images/top_with_flash.jpg" width="60%"/>
 
