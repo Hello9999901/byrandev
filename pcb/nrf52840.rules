@@ -1,0 +1,88 @@
+
+(rules PCB nrf52840
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1754)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 150.0)
+    (clear 130.2)
+    (clear 75.0 (type smd_to_turn_gap))
+    (clear 32.6 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (class default
+    GND /ANT "Net-(C2-Pad2)" "Net-(C3-Pad1)" "Net-(C4-Pad1)" "VSS_PA" "Net-(C5-Pad2)" "Net-(C6-Pad1)"
+    "Net-(C7-Pad1)" "Net-(C8-Pad1)" "Net-(C9-Pad1)" VBUS "Net-(C11-Pad2)" "Net-(C13-Pad2)" "Net-(C14-Pad2)" "VDD_NRF"
+    "BAT_VOLT" VDDH "Net-(C23-Pad1)" "PPH_VCC" VBAT "Net-(D1-Pad1)" "BLUE_LED" "EXT_5V"
+    "Net-(D3-Pad1)" "Net-(D3-Pad2)" /CC1 "USB_D+" "USB_D-" /CC2 "unconnected-(J1-PadS1)" "unconnected-(J1-PadS2)"
+    "unconnected-(J1-PadS3)" "unconnected-(J1-PadS4)" "Net-(L2-Pad2)" "Net-(L3-Pad2)" "Net-(L4-Pad2)" "Net-(R2-Pad2)" "CHARGE_CTRL_1" "Net-(R6-Pad2)"
+    "CHARGE_CTRL_2" "PPH_VCC_CTRL" "Net-(R10-Pad1)" SWD SWC P0.31 P0.29 P0.02
+    P1.13 "unconnected-(U1-PadA18)" "unconnected-(U1-PadA20)" RESET "unconnected-(U1-PadAC15)" "unconnected-(U1-PadAC17)" "unconnected-(U1-PadAC19)" P0.25
+    P0.17 P0.20 P0.22 P0.24 P1.00 "unconnected-(U1-PadB9)" "unconnected-(U1-PadB11)" "unconnected-(U1-PadB15)"
+    "unconnected-(U1-PadB17)" "unconnected-(U1-PadB19)" "unconnected-(U1-PadH2)" P0.04 P0.10 "unconnected-(U1-PadK2)" P0.09 "unconnected-(U1-PadM2)"
+    P0.08 "unconnected-(U1-PadP2)" P1.06 P0.11 "unconnected-(U1-PadT23)" P1.04 "unconnected-(U1-PadV23)" P1.02
+    "unconnected-(U1-PadY23)" "unconnected-(U2-Pad7)" "unconnected-(U2-Pad12)" "unconnected-(U2-Pad14)" "unconnected-(U3-Pad4)" "unconnected-(U5-Pad2)" "unconnected-(U5-Pad3)" "unconnected-(U4-Pad17)"
+    "unconnected-(U4-Pad16)" P0.12 P1.09 P1.07 "unconnected-(J1-PadB8)" "unconnected-(J1-PadA8)" P0.06 P1.10
+    "unconnected-(U4-Pad18)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 150.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

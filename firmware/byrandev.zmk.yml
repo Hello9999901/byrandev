@@ -1,0 +1,11 @@
+file_format: "1"
+id: byrandev
+name: byrandev
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
+url: https://www.byran.tech
