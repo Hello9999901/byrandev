@@ -3,7 +3,7 @@
  The components based off the [mikoto](https://github.com/zhiayang/mikoto) board.
  I will do some finishing touches when I have the time.
  Since the board is two layered, it can be made affordably and be _directly integrated_ into larger boards with no issue.
-##### V2 come soon (trademark pending) with a ton of new features:
+##### V2 come soon(trademark pending) with a ton of new features:
  - SMA Antenna Connector
  - More Pins
  - JST-PH connector for power
