@@ -10,7 +10,7 @@
 
 / {
 	model = "byrandev";
-	compatible = "nice,60";
+	compatible = "byran,dev";
 
 	chosen {
 		zephyr,code-partition = &code_partition;

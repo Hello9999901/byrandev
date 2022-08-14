@@ -8,6 +8,10 @@ if BOARD_BYRANDEV
 config BOARD
 	default "byrandev"
 
+config ZMK_KEYBOARD_NAME
+	default "byrandev"
+
+
 if USB
 
 config USB_NRFX
