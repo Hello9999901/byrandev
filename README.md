@@ -1,6 +1,6 @@
 # byrandev (V1.0)
- nrf52840 dev board, highly experimental.
- The components based off the [mikoto](https://github.com/zhiayang/mikoto) board.
+ a nrf52840 dev board that is highly experimental.
+ The components are based off the [mikoto](https://github.com/zhiayang/mikoto) board.
  I will do some finishing touches when I have the time.
  Since the board is two layered, it can be made affordably and be _directly integrated_ into larger boards with no issue.
 ##### V2 come soon with a ton of new features:
