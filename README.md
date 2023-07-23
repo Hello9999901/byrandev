@@ -1,4 +1,7 @@
 # byrandev (V1.0)
+
+# I am happy to say, the next revision of the byrandev will be released soon (tm)!
+
  a nrf52840 dev board that is highly experimental.
  The components are based off the [mikoto](https://github.com/zhiayang/mikoto) board.
  I will do some finishing touches when I have the time.
